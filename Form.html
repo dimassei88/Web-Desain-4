@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+    <table align=center cellpadding="4">
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="user" id="" pattern="[A-Za-z]+"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="pass" id="" placeholder="*6-18 Characters" pattern="[A-Za-z0-9] {6,18}"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="almt" id="" rows="4" cols="21"></textarea></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin :</td>
+            <td><input type="radio" name="jk" id="">Pria <input type="radio" name="jk" id=""> Wanita</td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+            <td><select name="jur" id="">
+                <optgroup Label="FTD">
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SK">Sistem Komputer</option>
+                    <option value="DKV">Desain Komunikasi Visual</option>
+                </optgroup>
+                <optgroup label="FEB">
+                    <option value="AK">Akutansi</option>
+                    <option value="MAN">Manajemen</option>
+                </optgroup>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="ttl" id=""></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Send" name="send"> <input type="reset" value="Reset" name="reset"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
